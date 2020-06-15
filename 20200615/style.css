@@ -1,0 +1,52 @@
+/*  
+聊天item采用flex布局
+*/
+.item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex-direction: row;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.right .message {
+    margin-right: 10px;
+}
+.left .message{
+    margin-left: 10px;
+}
+
+.header-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+}
+
+.message {
+    border-radius: 10px;
+    display: flex;
+    background: #e0f4e0;
+    min-height: 25px;
+    padding: 9px 10px;
+    align-items: center;
+    color: #222121;
+}
+button:active{}
+
+.chart-timer{
+    text-align: left;
+    /*color: #616161;*/
+    color: #bfbfbf;
+    font-size: 13px;
+}
+.chart-center{
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 13px;
+    overflow: visible;
+}
