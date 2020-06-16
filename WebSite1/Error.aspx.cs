@@ -13,17 +13,17 @@ public partial class Error : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            Exception LastError = Server.GetLastError().GetBaseException();
-            if (LastError != null)
-            {
-                string ErrMessage = LastError.ToString();
+            //Exception LastError = Server.GetLastError().GetBaseException();
+            //if (LastError != null)
+            //{
+            //    string ErrMessage = LastError.ToString();
 
-                LogType[] logtypes = { LogType.Info, LogType.Error };
-                Random r = new Random();
-                int index = r.Next(0, 2);
-                LogHelper.WriteLog(new Log { Content = ErrMessage.ToString(), Dt = DateTime.Now.ToString(), Type = logtypes[index] });
+            //    LogType[] logtypes = { LogType.Info, LogType.Error };
+            //    Random r = new Random();
+            //    int index = r.Next(0, 2);
+            //    LogHelper.WriteLog(new Log { Content = ErrMessage.ToString(), Dt = DateTime.Now.ToString(), Type = logtypes[index] });
 
-            }
+            //}
 
             //LogHelper.WriteLog(new Log { Content = "这是一次日志", Dt = DateTime.Now.ToString(), Type = 1 });
 

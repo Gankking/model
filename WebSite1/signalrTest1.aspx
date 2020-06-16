@@ -17,6 +17,8 @@
 </html>
 <script>
     $(function () {
+        $.connection.hub.url = 'http://localhost:53384/signalr';//指定SignalR服务器
+        jQuery.support.cors = true; //Cors模式必须设置
         // Reference the auto-generated proxy for the hub.
         var log = $.connection.logHub;
         console.log(log);
