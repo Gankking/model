@@ -22,6 +22,10 @@
         // Reference the auto-generated proxy for the hub.
         var log = $.connection.logHub;
         console.log(log);
+
+        //实际上是服务端调用了前端的js方法（订阅）
+        $.connection.hub.qs = { 'groupname': '监控' }
+
         // Create a function that the hub can call back to display messages.
         log.client.addNewMessageToPage = function (name, message) {
             console.log(name);
