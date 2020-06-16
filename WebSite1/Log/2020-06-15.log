@@ -1,0 +1,223 @@
+1 2020/6/15 19:32:38
+这是一次日志1 2020/6/15 19:47:17
+这是一次日志1 2020/6/15 19:47:18
+这是一次日志1 2020/6/15 19:47:26
+这是一次日志1 2020/6/15 19:47:26
+这是一次日志1 2020/6/15 20:04:34
+这是一次日志1 2020/6/15 20:04:38
+这是一次日志1 2020/6/15 20:04:49
+这是一次日志1 2020/6/15 20:04:50
+这是一次日志1 2020/6/15 20:04:51
+这是一次日志1 2020/6/15 20:04:52
+这是一次日志1 2020/6/15 20:07:31
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 _Default.btnSave_Click(Object sender, EventArgs e) 位置 e:\signalRCode\WebSite1\Default.aspx.cs:行号 24
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)1 2020/6/15 20:09:14
+已添加了具有相同键的项。0 2020/6/15 20:09:39
+已添加了具有相同键的项。1 2020/6/15 20:23:28
+这是一次日志1 2020/6/15 20:24:15
+这是一次日志1 2020/6/15 20:24:19
+这是一次日志1 2020/6/15 20:24:23
+这是一次日志1 2020/6/15 20:24:25
+这是一次日志1 2020/6/15 20:31:07
+这是一次日志0 2020/6/15 20:32:00
+引发类型为“System.Web.HttpUnhandledException”的异常。1 2020/6/15 20:32:23
+引发类型为“System.Web.HttpUnhandledException”的异常。0 2020/6/15 20:32:33
+引发类型为“System.Web.HttpUnhandledException”的异常。1 2020/6/15 20:45:29
+引发类型为“System.Web.HttpUnhandledException”的异常。1 2020/6/15 20:45:46
+引发类型为“System.Web.HttpUnhandledException”的异常。0 2020/6/15 20:45:55
+引发类型为“System.Web.HttpUnhandledException”的异常。Error 2020/6/15 20:51:31
+引发类型为“System.Web.HttpUnhandledException”的异常。Info 2020/6/15 20:51:50
+引发类型为“System.Web.HttpUnhandledException”的异常。Error 2020/6/15 20:51:58
+引发类型为“System.Web.HttpUnhandledException”的异常。Error 2020/6/15 20:52:07
+引发类型为“System.Web.HttpUnhandledException”的异常。Info 2020/6/15 20:52:12
+引发类型为“System.Web.HttpUnhandledException”的异常。Info 2020/6/15 20:52:25
+引发类型为“System.Web.HttpUnhandledException”的异常。Info 2020/6/15 20:52:34
+引发类型为“System.Web.HttpUnhandledException”的异常。Error 2020/6/15 20:52:41
+引发类型为“System.Web.HttpUnhandledException”的异常。Error 2020/6/15 20:53:52
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 _Default.btnSave_Click(Object sender, EventArgs e) 位置 e:\signalRCode\WebSite1\Default.aspx.cs:行号 24
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)Info 2020/6/15 20:54:06
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 _Default.btnSave_Click(Object sender, EventArgs e) 位置 e:\signalRCode\WebSite1\Default.aspx.cs:行号 24
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)Error 2020/6/15 20:54:21
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 _Default.btnSave_Click(Object sender, EventArgs e) 位置 e:\signalRCode\WebSite1\Default.aspx.cs:行号 24
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)Info 2020/6/15 20:57:30
+这是1次日志Info 2020/6/15 20:57:32
+这是2次日志Error 2020/6/15 20:57:34
+这是3次日志Error 2020/6/15 20:57:36
+这是4次日志Error 2020/6/15 20:57:38
+这是5次日志Info 2020/6/15 20:57:40
+这是6次日志Info 2020/6/15 20:57:42
+这是7次日志Info 2020/6/15 20:57:44
+这是8次日志Error 2020/6/15 20:57:46
+这是9次日志Info 2020/6/15 20:57:48
+这是10次日志Info 2020/6/15 20:57:50
+这是11次日志Error 2020/6/15 20:57:52
+这是12次日志Error 2020/6/15 20:57:54
+这是13次日志Info 2020/6/15 20:57:56
+这是14次日志Error 2020/6/15 20:57:58
+这是15次日志Error 2020/6/15 20:58:00
+这是16次日志Info 2020/6/15 20:58:02
+这是17次日志Error 2020/6/15 20:58:04
+这是18次日志Info 2020/6/15 20:58:06
+这是19次日志Info 2020/6/15 20:58:08
+这是20次日志Info 2020/6/15 20:58:10
+这是21次日志Error 2020/6/15 20:58:12
+这是22次日志Error 2020/6/15 20:58:14
+这是23次日志Error 2020/6/15 20:58:16
+这是24次日志Error 2020/6/15 20:58:18
+这是25次日志Error 2020/6/15 20:58:20
+这是26次日志Info 2020/6/15 20:58:22
+这是27次日志Info 2020/6/15 20:58:24
+这是28次日志Info 2020/6/15 20:58:26
+这是29次日志Info 2020/6/15 20:58:28
+这是30次日志Info 2020/6/15 20:58:30
+这是31次日志Info 2020/6/15 20:58:32
+这是32次日志Info 2020/6/15 20:58:34
+这是33次日志Info 2020/6/15 20:58:36
+这是34次日志Error 2020/6/15 20:58:38
+这是35次日志Error 2020/6/15 20:58:40
+这是36次日志Error 2020/6/15 20:59:36
+这是1次日志Info 2020/6/15 20:59:38
+这是2次日志Info 2020/6/15 20:59:40
+这是3次日志Error 2020/6/15 20:59:42
+这是4次日志Error 2020/6/15 20:59:44
+这是5次日志Error 2020/6/15 20:59:46
+这是6次日志Info 2020/6/15 20:59:48
+这是7次日志Info 2020/6/15 20:59:50
+这是8次日志Info 2020/6/15 20:59:52
+这是9次日志Info 2020/6/15 20:59:54
+这是10次日志Info 2020/6/15 20:59:56
+这是11次日志Info 2020/6/15 20:59:58
+这是12次日志Info 2020/6/15 21:00:00
+这是13次日志Info 2020/6/15 21:00:02
+这是14次日志Error 2020/6/15 21:00:04
+这是15次日志Error 2020/6/15 21:00:06
+这是16次日志Error 2020/6/15 21:00:08
+这是17次日志Info 2020/6/15 21:00:10
+这是18次日志Info 2020/6/15 21:00:12
+这是19次日志Info 2020/6/15 21:00:14
+这是20次日志Error 2020/6/15 21:00:16
+这是21次日志Info 2020/6/15 21:00:18
+这是22次日志Error 2020/6/15 21:00:20
+这是23次日志Error 2020/6/15 21:00:22
+这是24次日志Error 2020/6/15 21:00:24
+这是25次日志Error 2020/6/15 21:00:26
+这是26次日志Error 2020/6/15 21:00:28
+这是27次日志Info 2020/6/15 21:00:30
+这是28次日志Error 2020/6/15 21:00:32
+这是29次日志Error 2020/6/15 21:00:34
+这是30次日志Info 2020/6/15 21:00:36
+这是31次日志Info 2020/6/15 21:00:38
+这是32次日志Error 2020/6/15 21:00:40
+这是33次日志Error 2020/6/15 21:00:42
+这是34次日志Error 2020/6/15 21:00:44
+这是35次日志Info 2020/6/15 21:00:46
+这是36次日志Error 2020/6/15 21:00:48
+这是37次日志Error 2020/6/15 21:00:50
+这是38次日志Info 2020/6/15 21:00:52
+这是39次日志Error 2020/6/15 21:00:54
+这是40次日志Info 2020/6/15 21:00:56
+这是41次日志Info 2020/6/15 21:00:58
+这是42次日志Error 2020/6/15 21:01:00
+这是43次日志Error 2020/6/15 21:01:02
+这是44次日志Info 2020/6/15 21:01:04
+这是45次日志Error 2020/6/15 21:01:06
+这是46次日志Error 2020/6/15 21:01:08
+这是47次日志Error 2020/6/15 21:01:10
+这是48次日志Error 2020/6/15 21:01:12
+这是49次日志Error 2020/6/15 21:01:14
+这是50次日志Info 2020/6/15 21:01:16
+这是51次日志Info 2020/6/15 21:01:18
+这是52次日志Info 2020/6/15 21:01:20
+这是53次日志Error 2020/6/15 21:01:22
+这是54次日志Info 2020/6/15 21:01:24
+这是55次日志Error 2020/6/15 21:01:26
+这是56次日志Error 2020/6/15 21:01:28
+这是57次日志Info 2020/6/15 21:01:30
+这是58次日志Info 2020/6/15 21:01:32
+这是59次日志Error 2020/6/15 21:01:34
+这是60次日志Info 2020/6/15 21:01:36
+这是61次日志Info 2020/6/15 21:01:38
+这是62次日志Info 2020/6/15 21:01:40
+这是63次日志Info 2020/6/15 21:01:42
+这是64次日志Info 2020/6/15 21:01:44
+这是65次日志Error 2020/6/15 21:01:46
+这是66次日志Error 2020/6/15 21:01:48
+这是67次日志Error 2020/6/15 21:01:50
+这是68次日志Info 2020/6/15 21:01:52
+这是69次日志Info 2020/6/15 21:01:54
+这是70次日志Info 2020/6/15 21:01:56
+这是71次日志Error 2020/6/15 21:01:58
+这是72次日志Info 2020/6/15 21:02:00
+这是73次日志Info 2020/6/15 21:02:02
+这是74次日志Info 2020/6/15 21:02:04
+这是75次日志Error 2020/6/15 21:02:06
+这是76次日志Error 2020/6/15 21:02:08
+这是77次日志Error 2020/6/15 21:02:10
+这是78次日志Error 2020/6/15 21:02:12
+这是79次日志Info 2020/6/15 21:02:14
+这是80次日志Info 2020/6/15 21:02:16
+这是81次日志Info 2020/6/15 21:02:18
+这是82次日志Info 2020/6/15 21:02:20
+这是83次日志Info 2020/6/15 21:02:22
+这是84次日志Info 2020/6/15 21:02:24
+这是85次日志Error 2020/6/15 21:02:26
+这是86次日志Info 2020/6/15 21:02:28
+这是87次日志Error 2020/6/15 21:02:30
+这是88次日志Error 2020/6/15 21:02:32
+这是89次日志Error 2020/6/15 21:02:34
+这是90次日志Info 2020/6/15 21:02:36
+这是91次日志Error 2020/6/15 21:02:38
+这是92次日志Info 2020/6/15 21:02:40
+这是93次日志Info 2020/6/15 21:02:42
+这是94次日志Error 2020/6/15 21:02:44
+这是95次日志Info 2020/6/15 21:02:46
+这是96次日志Info 2020/6/15 21:02:48
+这是97次日志Error 2020/6/15 21:02:50
+这是98次日志Error 2020/6/15 21:02:52
+这是99次日志Error 2020/6/15 21:02:54
+这是100次日志Error 2020/6/15 21:02:56
+这是101次日志Info 2020/6/15 21:02:58
+这是102次日志Info 2020/6/15 21:03:00
+这是103次日志Info 2020/6/15 21:03:02
+这是104次日志Info 2020/6/15 21:03:04
+这是105次日志Error 2020/6/15 21:03:06
+这是106次日志Info 2020/6/15 21:03:08
+这是107次日志Error 2020/6/15 21:03:10
+这是108次日志Error 2020/6/15 21:03:12
+这是109次日志
