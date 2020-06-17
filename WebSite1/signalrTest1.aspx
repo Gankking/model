@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <script src="/Scripts/jquery-1.6.4.js"></script>
-    <script src="/Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="/Scripts/jquery.signalR-2.4.1.js"></script>
      <script src="/signalr/js"></script>
 </head>
 <body>
