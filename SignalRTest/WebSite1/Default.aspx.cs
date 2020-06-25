@@ -11,17 +11,18 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
-        {
-            txtname.Text = "1";
-        }
+        if (!IsPostBack) { }
     }
 
     protected void btnSave_Click(object sender, EventArgs e)
     {
+        Response.Write(hiddenShootImg.ImageUrl);
+        Response.Write(this.hfimg.Value);
+        //Response.End();
+
         Dictionary<string, object> dic = new Dictionary<string, object>();
         dic.Add("name", "1");
-        dic.Add("name", "1");
-        dic.Add("name", "1");
+        //dic.Add("name", "1");
+        //dic.Add("name", "1");
     }
 }
