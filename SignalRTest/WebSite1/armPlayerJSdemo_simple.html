@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>AMR decode/encode tests</title>
+</head>
+<body>
+    <h1>AMR 录音机 Demo</h1>
+    <h2>解码、播放</h2>
+    <div id="player-amr">
+        <p>
+            <button id="amr-load-1" onclick="player(this, '/Audio/20131002235427264.amr')">20131002235427264.amr</button>
+            <button id="amr-load-2" onclick="player(this, '/Audio/mario.amr')">mario.amr</button>
+        </p>
+        <p>
+            <button id="amr-play" disabled>播放</button>
+            <button id="amr-stop" disabled>停止</button>
+            <input id="amr-progress" type="range" min="0" max="1" step="any" value="0" disabled>
+            <label for="amr-progress">
+                <span id="amr-cur">0'</span>
+                <span>/</span>
+                <span id="amr-duration">0'</span>
+            </label>
+        </p>
+    </div>
+    <script src="/Scripts/BenzAMRRecorder.js"></script>
+    <script>
+        //(function () {
+        function E(selector) {
+            return document.querySelector(selector);
+        }
+
+        /**** 解码、播放 ****/
+        var amrPlayer;
+        //var loadDemoBtn = E('#amr-load');
+        var playBtn = E('#amr-play');
+        var stopBtn = E('#amr-stop');
+        var progressCtrl = E('#amr-progress');
+        var isDragging = false;
+        var cur = E('#amr-cur');
+        var duration = E('#amr-duration');
+
+        setInterval(function () {
+            if (amrPlayer) {
+                cur.innerHTML = amrPlayer.getCurrentPosition().toFixed(2) + '\'';
+                if (!isDragging) {
+                    progressCtrl.value = amrPlayer.getCurrentPosition().toFixed(2);
+                }
+            } else {
+                cur.innerHTML = '0\'';
+            }
+        }, 10);
+
+        //loadDemoBtn.onclick = function() {
+        function player(btn, url) {
+            if (amrPlayer) {
+                amrPlayer.stop();
+            }
+            amrPlayer = new BenzAMRRecorder();
+            //loadDemoBtn.setAttribute('disabled', true);
+            btn.setAttribute('disabled', true);
+            playBtn.setAttribute('disabled', true);
+            stopBtn.setAttribute('disabled', true);
+            progressCtrl.setAttribute('disabled', true);
+            //amrPlayer.initWithUrl('./res/mario.amr').then(function () { //播放本地文件
+            amrPlayer.initWithUrl(url).then(function () { //播放在线文件
+                //loadDemoBtn.removeAttribute('disabled');
+                btn.removeAttribute('disabled');
+                playBtn.removeAttribute('disabled');
+                stopBtn.removeAttribute('disabled');
+                progressCtrl.removeAttribute('disabled');
+                progressCtrl.setAttribute('max', amrPlayer.getDuration());
+                duration.innerHTML = amrPlayer.getDuration().toFixed(2) + '\'';
+            });
+
+            // 绑定事件
+            amrPlayer.onPlay(function () {
+                console.log('Event: play');
+                playBtn.innerHTML = '暂停';
+            });
+            amrPlayer.onStop(function () {
+                console.log('Event: stop');
+                playBtn.innerHTML = '播放';
+            });
+            amrPlayer.onPause(function () {
+                console.log('Event: pause');
+                playBtn.innerHTML = '继续';
+            });
+            amrPlayer.onResume(function () {
+                console.log('Event: resume');
+                playBtn.innerHTML = '暂停';
+            });
+            amrPlayer.onEnded(function () {
+                console.log('Event: ended');
+                playBtn.innerHTML = '播放';
+            });
+            amrPlayer.onAutoEnded(function () {
+                console.log('Event: autoEnded');
+            });
+            amrPlayer.onStartRecord(function () {
+                console.log('Event: startRecord');
+            });
+            amrPlayer.onFinishRecord(function () {
+                console.log('Event: finishRecord');
+            });
+            amrPlayer.onCancelRecord(function () {
+                console.log('Event: cancelRecord');
+            });
+        };
+
+        playBtn.onclick = function () {
+            amrPlayer.playOrPauseOrResume();
+        };
+
+        stopBtn.onclick = function () {
+            amrPlayer.stop();
+        };
+
+        progressCtrl.onmousedown = function () {
+            isDragging = true;
+        };
+        progressCtrl.onmouseup = function () {
+            isDragging = false;
+        };
+        progressCtrl.onchange = function (e) {
+            amrPlayer.setPosition(e.target.value);
+        };
+        //})();
+    </script>
+</body>
+</html>
