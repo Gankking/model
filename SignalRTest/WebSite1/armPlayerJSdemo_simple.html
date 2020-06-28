@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <title>AMR decode/encode tests</title>
 </head>
 <body>
@@ -11,8 +12,10 @@
     <h2>解码、播放</h2>
     <div id="player-amr">
         <p>
-            <button id="amr-load-1" onclick="player(this, '/Audio/20131002235427264.amr')">20131002235427264.amr</button>
-            <button id="amr-load-2" onclick="player(this, '/Audio/mario.amr')">mario.amr</button>
+            <button id="amr-load-1" onclick="player(this, 'http://localhost:58933/Audio/20131002235427264.amr')">20131002235427264.amr</button>
+            <button id="amr-load-2" onclick="player(this, 'http://www.s2.test:8457/Audio/20131002235427264.amr')">http://www.s2.test:8457/Audio/20131002235427264.amr</button>
+            <button id="amr-load-2" onclick="player(this, 'http://www.signalr.test:5422/Audio/mario.amr')">http://www.signalr.test:5422/Audio/mario.amr</button>
+
         </p>
         <p>
             <button id="amr-play" disabled>播放</button>
@@ -25,6 +28,7 @@
             </label>
         </p>
     </div>
+    <script src="Scripts/jquery-1.6.4.js"></script>
     <script src="/Scripts/BenzAMRRecorder.js"></script>
     <script>
         //(function () {
